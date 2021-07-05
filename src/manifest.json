@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "roll20 glass theme",
+    "version": "1.0",
+  
+    "description": "roll20  theme",
+
+    "background":{
+        "scripts":[
+            "./browser-polyfill.js"
+        ]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://app.roll20.net/editor/*"],
+            "js": ["./browser-polyfill.js","./main.js"],
+            "css": ["./css/main.css"]
+           
+        }
+    ]
+  }
