@@ -2,9 +2,10 @@
 
     "manifest_version": 2,
     "name": "roll20 glass theme",
-    "version": "1.0",
+    "version": "1.1.0",
   
-    "description": "roll20  theme",
+    "description": "roll20 theme",
+  
 
     "background":{
         "scripts":[
@@ -19,5 +20,13 @@
             "css": ["./css/main.css"]
            
         }
-    ]
+    ],
+    "icons":{
+        "48": "icon.svg",
+         "96": "icon.svg"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Roll20 Glass"
+      }
   }
