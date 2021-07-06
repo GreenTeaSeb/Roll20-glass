@@ -15,7 +15,7 @@ But I will update it soon so that GMs can use it.
 ## Installation  
 
 ### Firefox  
-[Visit the official page](https://addons.mozilla.org/en-US/firefox/addon/roll20-glass-theme/) or [download the zipped extension file](https://github.com/GreenTeaSeb/Roll20-glass/raw/main/web-ext-artifacts/roll20_glass_theme-1.2.1.zip) and load it in manually.
+[Visit the official page](https://addons.mozilla.org/en-US/firefox/addon/roll20-glass-theme/) or [download the zipped extension file](https://github.com/GreenTeaSeb/Roll20-glass/raw/main/web-ext-artifacts/roll20_glass_theme-1.2.2.zip) and load it in manually.
 
 ### Chrome 
 Load the src folder in chrome://extensions with developer mode
