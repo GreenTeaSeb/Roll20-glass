@@ -4,17 +4,18 @@
 
 
 Small addon that changes how roll20 looks, mainly adds a dark mode and some transparency  
-there are a few more boxes that are white, but for players ,it's mostly dark theme now.
+
+Some pages are still white, but those will be fully black soon as well. If you see any white squares, please report it to me and I will fix it.  
 
 For GMs, there's a lot of stuff that isn't tested, and it will look ugly if you use it.  
 But I will update it soon so that GMs can use it.  
 
-#### `CHROME IS CURRENTLY WONKY AND NOT FULLY SUPPORTED`
+#### `CHROME IS CURRENTLY WONKY AND NOT FULLY SUPPORTED, YOU MAY EXPERIENCE SOME UNUSUAL VISUAL EFFECTS`
 
 ## Installation  
 
 ### Firefox  
-[Visit the official page](https://addons.mozilla.org/en-US/firefox/addon/roll20-glass-theme/) or download the zipped extension and load it in manually.
+[Visit the official page](https://addons.mozilla.org/en-US/firefox/addon/roll20-glass-theme/) or [download the zipped extension file](https://github.com/GreenTeaSeb/Roll20-glass/raw/main/web-ext-artifacts/roll20_glass_theme-1.2.1.zip) and load it in manually.
 
 ### Chrome 
 Load the src folder in chrome://extensions with developer mode
