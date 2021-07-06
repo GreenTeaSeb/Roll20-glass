@@ -1,24 +1,21 @@
 {
-
     "manifest_version": 2,
-    "name": "roll20 glass theme",
-    "version": "1.1.0",
+    "name": "roll20 Glass Theme",
+    "version": "1.2.1",
   
     "description": "roll20 theme",
-  
 
-    "background":{
-        "scripts":[
-            "./browser-polyfill.js"
-        ]
-    },
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "{ada2b3d9-cd74-4107-bc86-9b2ee92be897}"
+        }
+      },
 
     "content_scripts": [
         {
             "matches": ["*://app.roll20.net/editor/*"],
-            "js": ["./browser-polyfill.js","./main.js"],
-            "css": ["./css/main.css"]
-           
+            "css": ["./css/main.css"],
+            "all_frames": true
         }
     ],
     "icons":{
