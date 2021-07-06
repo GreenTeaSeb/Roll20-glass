@@ -5,11 +5,7 @@
   
     "description": "roll20 theme",
 
-    "browser_specific_settings": {
-        "gecko": {
-          "id": "{ada2b3d9-cd74-4107-bc86-9b2ee92be897}"
-        }
-      },
+   
 
     "content_scripts": [
         {
@@ -19,11 +15,17 @@
         }
     ],
     "icons":{
-        "48": "icon.svg",
-         "96": "icon.svg"
+        "48": "icon48.png",
+         "96": "icon96.png"
     },
     "browser_action": {
         "default_icon": "icon.png",
         "default_title": "Roll20 Glass"
+      },
+
+      "browser_specific_settings": {
+        "gecko": {
+          "id": "{ada2b3d9-cd74-4107-bc86-9b2ee92be897}"
+        }
       }
   }

@@ -12,10 +12,9 @@ But I will update it soon so that GMs can use it.
 #### `CHROME IS CURRENTLY WONKY AND NOT FULLY SUPPORTED`
 
 ## Installation  
-[Download the zip](https://github.com/GreenTeaSeb/Roll20-glass/raw/main/web-ext-artifacts/roll20_glass_theme-1.1.0-an%2Bfx.xpi) and load it in your prefered browser.
 
 ### Firefox  
-[Visit the official page](https://addons.mozilla.org/en-US/firefox/addon/roll20-glass-theme/) or do the above mentioned step
+[Visit the official page](https://addons.mozilla.org/en-US/firefox/addon/roll20-glass-theme/) or download the zipped extension and load it in manually.
 
 ### Chrome 
 Load the src folder in chrome://extensions with developer mode
