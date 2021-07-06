@@ -12,6 +12,9 @@ But I will update it soon so that GMs can use it.
 
 #### `CHROME IS CURRENTLY WONKY AND NOT FULLY SUPPORTED, YOU MAY EXPERIENCE SOME UNUSUAL VISUAL EFFECTS`
 
+Background in screenshots: https://wallhaven.cc/w/j5mv5q
+Custom background links will be planned in the future!
+
 ## Installation  
 
 ### Firefox  
