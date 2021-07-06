@@ -32,9 +32,6 @@ a:link{
     color: var(--text-highlight) !important;
 }
 
-*,:not(.didroll){
-    font-family: 'Roboto', sans-serif !important;
-}
 
 .sheet-container,.sheet-desc {
     filter:invert(1) invert(1%) sepia(1%) saturate(873%) hue-rotate(314deg) brightness(94%) contrast(88%) !important;
@@ -389,7 +386,7 @@ p,li,h1, .message{
     background: var(--text-highlight) !important;
 }
  
-#sheetform textarea,  #sheetform  span, .ui-dialog span:not(.insp-prof-container .value input[type="checkbox"] ~ span):not(.ui-icon) , .ui-dialog label, .abilities{
+#sheetform textarea,  #sheetform  span, .ui-dialog span:not(.insp-prof-container .value input[type="checkbox"] ~ span):not(.ui-icon):not(.label) , .ui-dialog label, .abilities{
     background: none !important;
   
 }
