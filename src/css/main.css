@@ -2,7 +2,7 @@
 
 :root {
     --background : #121212;
-
+    --background-image: url(https://w.wallhaven.cc/full/j5/wallhaven-j5mv5q.jpg);
     --primary-h : 0;
     --primary-s : 0%;
     --primary-l : 7%;      
@@ -18,8 +18,8 @@
 
 
 body{
-    background-image: url(https://w.wallhaven.cc/full/j5/wallhaven-j5mv5q.jpg) !important; 
-    background-repeat: no-repeat !important;
+    background-image: var(--background-image) !important; 
+    background-repeat:  no-repeat !important;
     background-attachment: fixed !important;
     background-position: center !important; 
     background-size: cover !important;
@@ -28,7 +28,11 @@ body{
 
 }
 
-*,.didroll:not(){
+a:link{
+    color: var(--text-highlight) !important;
+}
+
+*,:not(.didroll){
     font-family: 'Roboto', sans-serif !important;
 }
 
@@ -89,6 +93,9 @@ textarea{
     background: none !important;
 }
 
+.ui-tabs-anchor:link{
+    color: var(--text) !important;
+}
 
 .ui-tabs-anchor:hover{
     font-size: 2rem !important;
@@ -125,7 +132,7 @@ textarea{
     background-color: #12121280 !important ;
 }
 
-#sheetform:not() select { 
+ select { 
     color: var(--text) !important;
 }
 .submenu img{
@@ -136,7 +143,7 @@ textarea{
     background-color: var(--text-highlight) !important ;
 }
 
-#textchat-input textarea, #sheetform:not() input{
+#textchat-input textarea, #sheetform input{
     color: var(--text   ) !important;
     transition: 0.3s !important;
     font-size: 1rem !important;
@@ -171,16 +178,11 @@ textarea{
     line-height: 24px !important;
 }
 
-.message div, .avatar:not(){
+.message div, .avatar{
    padding-top: 1rem !important;
 }
 
 
-.avatar img{
-    height: 30px !important;
-    width: 30px !important;
-    border-radius: 50% !important;
-}
 
 p,li,h1, .message{
     filter: none !important;
@@ -246,6 +248,12 @@ p,li,h1, .message{
 #initiativewindow .token img {
     max-width: 60px !important;
     max-height:  60px !important;
+}
+
+.avatar img{
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 100% !important;
 }
 
 .inlinerollresult.fullcrit{
@@ -386,7 +394,15 @@ p,li,h1, .message{
   
 }
 
-.display .title, .row.ellipsis span{
+.display .title, .row.ellipsis span, .page-title, h1,h2,h3,h4{
     color: var(--text-highlight) !important;
 }
 
+
+/*   WIKI  */
+.in-iframe * , .in-iframe{
+    background: none !important;
+}
+.in-iframe *{
+    color: var(--text) !important;
+}
