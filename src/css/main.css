@@ -2,7 +2,7 @@
 
 :root {
     --background : #121212;
-    --background-image: url(https://w.wallhaven.cc/full/j5/wallhaven-j5mv5q.jpg);
+    --background-image: #2b2b2b;
     --primary-h : 0;
     --primary-s : 0%;
     --primary-l : 7%;      
@@ -18,7 +18,7 @@
 
 
 body{
-    background-image: var(--background-image) !important; 
+    background: var(--background-image) !important; 
     background-repeat:  no-repeat !important;
     background-attachment: fixed !important;
     background-position: center !important; 
@@ -33,7 +33,7 @@ a:link{
 }
 
 
-.sheet-container,.sheet-desc {
+.sheet-container:not(.sheet-rolltemplate-spelloutput .sheet-container),.sheet-desc {
     filter:invert(1) invert(1%) sepia(1%) saturate(873%) hue-rotate(314deg) brightness(94%) contrast(88%) !important;
   }
 
@@ -71,6 +71,7 @@ textarea{
 }
 .tabmenu{
     width: inherit !important;
+    right: -6px !important;
     display: flex !important;
     justify-content: center !important ;
     align-items: center !important;
@@ -111,13 +112,17 @@ textarea{
     background-color: #12121280 !important ;
     border: none !important;
     box-shadow: -1rem 0 10px #000000bd !important;
+
+    
 }
 
+#rightsidebar{
+    right: -6px !important;
+}
 
 #rightsidebar .ui-tabs-panel{
     padding-top: 2rem !important;
-    overflow: scroll !important;
-    
+    overflow: overlay !important;
 }
 
 
@@ -139,6 +144,8 @@ textarea{
 .activebutton{
     background-color: var(--text-highlight) !important ;
 }
+
+
 
 #textchat-input textarea, #sheetform input{
     color: var(--text   ) !important;
@@ -175,7 +182,7 @@ textarea{
     line-height: 24px !important;
 }
 
-.message div, .avatar{
+.message div:not(.message .formula), .avatar{
    padding-top: 1rem !important;
 }
 
@@ -266,7 +273,7 @@ p,li,h1, .message{
 }
 
 #editor-wrapper{
-    overflow: hidden !important;
+    overflow: scroll !important;
 }
 
 .ui-dialog-titlebar span{
@@ -277,7 +284,7 @@ p,li,h1, .message{
     filter: invert(1) !important;
 }
 
-.ui-dialog button:not(.sheetform button) ,.ui-dialog .btn:not(.sheetform .btn) {
+.ui-dialog button:not(.sheetform button) ,.ui-dialog .btn:not(.sheetform .btn), .ui-dialog select:not(.sheetform select){
     background: var(--primary-light) !important;
     color:var(--text    ) !important;
 }
@@ -366,7 +373,7 @@ p,li,h1, .message{
 }
 
 .resources .subcontainer input{
-    color: var(--text) !important;
+    color: var(--primary) !important;
 }
 
 
@@ -395,6 +402,18 @@ p,li,h1, .message{
     color: var(--text-highlight) !important;
 }
 
+.header span, .header select, .vitals .label , .vitals span,  .resources .label ,.attributesabilities input, .attributesabilities label, img[alt="Roll 20"]{
+    filter: invert(1) !important;
+}
+.attack .btn input, .coin input, .insp-prof-container .value span, .total span, .level span, .page.options input, .spell .options input, .spell-level span, .tool input {
+    color:var(--primary)!important;
+}
+
+.advantagetoggle input[type="radio"]:checked + span, input[type="radio"].tab-button:checked + span, .weighttotal input, .attributesabilities .heading{
+    color:  var(--text-highlight) !important;
+    transition: 0.3s !important;
+}
+
 
 /*   WIKI  */
 .in-iframe * , .in-iframe{
@@ -402,4 +421,20 @@ p,li,h1, .message{
 }
 .in-iframe *{
     color: var(--text) !important;
+}
+
+/* random */
+
+.sheet-rolltemplate-spelloutput *{
+    background:  none !important;
+    color:  var(--text) !important;
+}
+
+.sheet-rolltemplate-spelloutput .sheet-title span{
+
+    color:  var(--text-highlight) !important;
+}
+
+.sheet-rolltemplate-spelloutput .sheet-container {
+    background: var(--primary-light) !important;
 }

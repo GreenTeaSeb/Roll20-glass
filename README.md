@@ -12,19 +12,22 @@ But I will update it soon so that GMs can use it.
 
 #### `CHROME IS CURRENTLY WONKY AND NOT FULLY SUPPORTED, YOU MAY EXPERIENCE SOME UNUSUAL VISUAL EFFECTS`
 
-Background in screenshots: https://wallhaven.cc/w/j5mv5q
-Custom background links will be planned in the future!
+
+## Customization:
+Supports custom image and color background by clicking on the extension icon and pasting in the hexcode ( #121212 ) or the url to the background.
+
 
 ## Installation  
 
 ### Firefox  
-[Visit the official page](https://addons.mozilla.org/en-US/firefox/addon/roll20-glass-theme/) or [download the zipped extension file](https://github.com/GreenTeaSeb/Roll20-glass/raw/main/web-ext-artifacts/roll20_glass_theme-1.2.2.zip) and load it in manually.
+[Visit the official page](https://addons.mozilla.org/en-US/firefox/addon/roll20-glass-theme/) or [download the zipped extension file](https://github.com/GreenTeaSeb/Roll20-glass/raw/main/web-ext-artifacts/roll20_glass_theme-1.3.0.zip) and load it in manually.
 
 ### Chrome 
 Load the src folder in chrome://extensions with developer mode
 
 
 ## Screenshots
+Background in screenshots by Tom Tenery  
 ![Screenshot](https://raw.githubusercontent.com/GreenTeaSeb/Roll20-glass/main/screenshots/search.png "Main area")  
 ![Screenshot](https://raw.githubusercontent.com/GreenTeaSeb/Roll20-glass/main/screenshots/chat.png "Main area chat")  
 ![Screenshot](https://raw.githubusercontent.com/GreenTeaSeb/Roll20-glass/main/screenshots/character-sheet.png "Character sheet")  

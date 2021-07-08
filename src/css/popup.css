@@ -1,0 +1,34 @@
+
+*{
+    color: #cfc9c2;
+}
+
+
+body{
+    background: #121212;
+    padding: 2rem;
+    
+}
+
+input{
+    background: #252525;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    
+}
+
+input:not(input[type="color"]){
+    padding: 0.2rem;
+    width: 20rem;
+}
+
+label{
+    float: left;
+    margin-right: 5px;
+}
+
+
+#background-color{
+    width: 2rem;
+}
