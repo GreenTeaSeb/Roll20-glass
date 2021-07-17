@@ -200,6 +200,7 @@ p,li,h1, .message{
 .by{
     color: var(--text-highlight) !important;
     margin-bottom: 2rem !important;
+    top: 5px !important;
 }
 
 .ui-widget-content{
@@ -393,9 +394,8 @@ p,li,h1, .message{
     background: var(--text-highlight) !important;
 }
  
-#sheetform textarea,  #sheetform  span, .ui-dialog span:not(.insp-prof-container .value input[type="checkbox"] ~ span):not(.ui-icon):not(.label) , .ui-dialog label, .abilities{
+#sheetform textarea,  #sheetform  span:not(.spell  span.prep), .ui-dialog span:not(.insp-prof-container .value input[type="checkbox"] ~ span):not(.ui-icon):not(.label):not(.spell  span.prep) , .ui-dialog label, .abilities{
     background: none !important;
-  
 }
 
 .display .title, .row.ellipsis span, .page-title, h1,h2,h3,h4{
@@ -414,6 +414,13 @@ p,li,h1, .message{
     transition: 0.3s !important;
 }
 
+.spell  span.prep{
+    background:var(--primary-light) !important;
+}
+
+.spell input[type="checkbox"]:checked ~ span.prep{
+    background: var(--text-highlight) !important;
+}
 
 /*   WIKI  */
 .in-iframe * , .in-iframe{
@@ -437,4 +444,7 @@ p,li,h1, .message{
 
 .sheet-rolltemplate-spelloutput .sheet-container {
     background: var(--primary-light) !important;
+}
+.sheet-container{
+    margin-bottom: 1em !important;
 }
