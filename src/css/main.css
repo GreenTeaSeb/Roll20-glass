@@ -402,7 +402,7 @@ p,li,h1, .message{
     color: var(--text-highlight) !important;
 }
 
-.header span, .header select, .vitals .label , .vitals span,  .resources .label ,.attributesabilities input, .attributesabilities label, img[alt="Roll 20"]{
+.header span, .header select, .vitals .label , .vitals span,  .resources .label ,.attributesabilities input, .attributesabilities label, img[alt="Roll 20"], .attributes-container span{
     filter: invert(1) !important;
 }
 .attack .btn input, .coin input, .insp-prof-container .value span, .total span, .level span, .page.options input, .spell .options input, .spell-level span, .tool input {
@@ -421,6 +421,13 @@ p,li,h1, .message{
 .spell input[type="checkbox"]:checked ~ span.prep{
     background: var(--text-highlight) !important;
 }
+
+ input[name="attr_equipped"], input[name="attr_weighttotal"]{
+    filter: invert(0) !important; 
+
+}
+
+
 
 /*   WIKI  */
 .in-iframe * , .in-iframe{
