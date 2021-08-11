@@ -33,11 +33,18 @@ a:link{
 }
 
 
-.sheet-container:not(.sheet-rolltemplate-spelloutput .sheet-container),.sheet-desc {
+.sheet-container:not(.sheet-rolltemplate-spelloutput .sheet-container), .sheet-desc:not(.sheet-info):not(.sheet-rolltemplate-traits span){
     filter:invert(1) invert(1%) sepia(1%) saturate(873%) hue-rotate(314deg) brightness(94%) contrast(88%) !important;
   }
 
-.sheet-rolltemplate-traits, textarea{
+.sheet-info span:empty{
+     filter:invert(1) invert(1%) sepia(1%) saturate(873%) hue-rotate(314deg) brightness(94%) contrast(88%) !important;
+}
+.sheet-info span:not(:empty){
+    background: none !important;
+    color: var(--text) !important;
+}
+.sheet-rolltemplate-traits, textarea, .sheet-rolltemplate-npc , .sheet-rolltemplate-npc span{
     background: none !important;
 }
 
@@ -45,7 +52,7 @@ textarea{
     color: var(--text) !important;
 }
 
-.sheet-rolltemplate-traits span{
+.sheet-rolltemplate-traits span , .sheet-rolltemplate-npc span{
     filter: none !important; 
     color: var(--text) !important;
     font-size: 1.5rem !important;
@@ -454,4 +461,8 @@ p,li,h1, .message{
 }
 .sheet-container{
     margin-bottom: 1em !important;
+}
+
+.message img{
+    
 }
